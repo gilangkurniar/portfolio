@@ -12,15 +12,15 @@ window.onload = function () {
         document.body.classList.toggle("dark")
         if (document.body.classList.contains("dark")) {
             nav.classList.toggle("navbar-dark")
+            icon.src = "/img/sun.png"
 
             logo.style.fill = "white"
-            icon.src = "/img/sun.png"
         } else {
             nav.classList.remove("navbar-dark")
             nav.classList.toggle("navbar-light")
+            icon.src = "/img/moon.png"
 
             logo.style.fill = "black"
-            icon.src = "/img/moon.png"
         }
     }
 }
