@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Lexend', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+:root {
+    --primary-color: white;
+    --text-color: black;
+    --nav-color: rgb(179, 159, 159);
+}
+
+.dark {
+    --primary-color: black;
+    --text-color: white;
+}
+
+.navbar {
+    padding: 20px 0 20px 0;
+}
+
+#icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: var(--text-color);
+}
+
+.navbar .nav-link a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    color: var(--nav-color);
+}
+
+.navbar .nav-link .active {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.about, .about a {
+    color: var(--text-color);
+}
+
+.projects {
+    color: var(--text-color);
+}
+
+.projects .card {
+    margin-bottom: 15px;
+}
+
+.projects .card img {
+    height: 200px;
+}
+
+.contact {
+    color: var(--text-color);
+}
+
+.contact .list img {
+    margin-right: 10px;
+}
+
+.contact .list li {
+    margin-bottom: 10px;
+}
+
+.contact .list a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.footer {
+    color: var(--text-color);
+}
+
+/* Media Query */
+@media (max-width: 768px)
+{
+    .about p {
+        text-align: justify;
+    }
+
+    .nav-link a {
+        display: flex;
+        flex-direction: row;
+    }
+}
