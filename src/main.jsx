@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/public/css/style.css'
 import 'boxicons'
 
-let icon = document.getElementById("toggle-icon")
-let logo = document.getElementById("logo")
-
 window.onload = function () {
+  let icon = document.getElementById("toggle-icon")
+  let logo = document.getElementById("logo")
+
   icon.onclick = function () {
     const nav = document.querySelector(".navbar-toggler")
 
