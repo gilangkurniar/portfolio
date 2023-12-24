@@ -23,7 +23,7 @@ const Projects = () => {
                     </Col>
                     <Col xs="2">
                       <a href="https://github.com/gilangkurniar/webpengaduan/" className='text-dark' target='_blank'>
-                        <box-icon type="logo" name="github"></box-icon>
+                        <box-icon type="logo" id="logo" name="github"></box-icon>
                       </a>
                     </Col>
                   </Row>

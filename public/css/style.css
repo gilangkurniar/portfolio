@@ -13,18 +13,20 @@ body {
     --primary-color: white;
     --text-color: black;
     --nav-color: rgb(179, 159, 159);
+    --card-color:white;
 }
 
 .dark {
     --primary-color: black;
     --text-color: white;
+    --card-color:rgb(15, 14, 14);
 }
 
 .navbar {
     padding: 20px 0 20px 0;
 }
 
-#icon {
+#toggle-icon {
     width: 20px;
     cursor: pointer;
 }
@@ -62,6 +64,8 @@ body {
 
 .projects .card {
     margin-bottom: 15px;
+    background-color: var(--card-color);
+    color: var(--text-color);
 }
 
 .projects .card img {
