@@ -1,8 +1,8 @@
-import { React, } from 'react'
+import { React, useEffect, useState, } from 'react'
 import { Container, Form, Nav, Navbar } from "react-bootstrap"
 import { NavLink } from 'react-router-dom'
 
-window.onload = function () {
+const night = () => {
     let icon = document.getElementById("toggle-icon")
 
     icon.onclick = function () {
@@ -31,9 +31,10 @@ const NavbarComponent = () => {
                 <Navbar.Brand href="/" className='fw-semibold'>GKR</Navbar.Brand>
                 <div className="nightmode d-flex">
                     <img src="/img/sun.png" id='sun' className='me-2' width="22px" />
-                    <Form.Check // prettier-ignore
+                    <Form.Check
                         type="switch"
                         id="toggle-icon"
+                        onClick={night}
                     />
                     <img src="" id='moon' className='mx-1' height="18px" />
                 </div>
