@@ -1,5 +1,5 @@
 import { React, } from 'react'
-import { Container, Nav, Navbar } from "react-bootstrap"
+import { Container, Form, Nav, Navbar } from "react-bootstrap"
 import { NavLink } from 'react-router-dom'
 
 window.onload = function () {
@@ -11,11 +11,9 @@ window.onload = function () {
         document.body.classList.toggle("dark")
         if (document.body.classList.contains("dark")) {
             nav.classList.toggle("navbar-dark")
-            icon.src = "/img/sun.png"
         } else {
             nav.classList.remove("navbar-dark")
             nav.classList.toggle("navbar-light")
-            icon.src = "/img/moon.png"
         }
     }
 }
@@ -25,7 +23,14 @@ const NavbarComponent = () => {
         <Navbar expand="lg" className="">
             <Container>
                 <Navbar.Brand href="/" className='fw-semibold'>GKR</Navbar.Brand>
-                <img src="/img/moon.png" id="toggle-icon" />
+                <div className="nightmode d-flex">
+                    <img src="/img/sun.png" className='me-2' width="22px" />
+                    <Form.Check // prettier-ignore
+                        type="switch"
+                        id="toggle-icon"
+                    />
+                    <img src="/img/moon.png" width="20px" />
+                </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">

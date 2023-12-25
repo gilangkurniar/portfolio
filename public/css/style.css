@@ -26,8 +26,11 @@ body {
     padding: 20px 0 20px 0;
 }
 
+.navbar .nightmode input {
+    width: 35px;
+}
+
 #toggle-icon {
-    width: 20px;
     cursor: pointer;
 }
 
