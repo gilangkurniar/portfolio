@@ -19,18 +19,14 @@ body {
 .dark {
     --primary-color: black;
     --text-color: white;
-    --card-color:rgb(15, 14, 14);
+    --card-color:rgb(32, 24, 24);
 }
 
 .navbar {
     padding: 20px 0 20px 0;
 }
 
-.navbar .nightmode input {
-    width: 35px;
-}
-
-#toggle-icon {
+#mode {
     cursor: pointer;
 }
 
