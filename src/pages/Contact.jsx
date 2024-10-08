@@ -20,6 +20,10 @@ const Contact = () => {
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTylKCihJQSgg22s6COVJ3w_Sh1iWfTbLSt7Q&usqp=CAU" width="20px" />
             <Link to="https://linkedin.com/in/gilangkurniar" target='_blank'>Gilang Kurnia R.</Link>
           </li>
+          <li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEyRoW83bPUs5f6Wad4IUb1UvOY_K2hcBOQ&s" width="20px" />
+            <Link to="https://github.com/gilangkurniar" target='_blank'>gilangkurniar</Link>
+          </li>
         </ul>
       </Container>
     </div>

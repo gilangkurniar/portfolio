@@ -15,18 +15,9 @@ const Projects = () => {
                 <Card.Text>
                   This is a public complaints website regarding road equipment facilities on the National Road in the BPTD Banten Region
                 </Card.Text>
-                <div className="info">
-                  <Row>
-                    <Col xs="10">
-                      <Badge bg="primary me-1">CodeIgniter</Badge>
-                      <Badge bg="primary me-1">Bootstrap</Badge>
-                    </Col>
-                    <Col xs="2">
-                      <a href="https://github.com/gilangkurniar/webpengaduan/" className='text-dark' target='_blank'>
-                        <box-icon type="logo" color="black" name="github"></box-icon>
-                      </a>
-                    </Col>
-                  </Row>
+                <div className="info mb-1">
+                    <Badge bg="primary me-1">CodeIgniter</Badge>
+                    <Badge bg="primary me-1">Bootstrap</Badge>
                 </div>
               </Card.Body>
             </Card>
